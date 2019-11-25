@@ -583,7 +583,7 @@ is available in the $BITRISE_XCODE_RAW_RESULT_TEXT_PATH environment variable`)
 					log.Debugf(certInfo.String())
 				}
 
-				profs, err := profileutil.InstalledProvisioningProfileInfos(profileutil.ProfileTypeIos)
+				profs, err := profileutil.InstalledProvisioningProfiles(profileutil.ProfileTypeIos)
 				if err != nil {
 					fail("Failed to get installed provisioning profiles, error: %s", err)
 				}
